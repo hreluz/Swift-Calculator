@@ -12,6 +12,8 @@
 		4BE1F773251B8C450080B3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE1F771251B8C450080B3F8 /* LaunchScreen.storyboard */; };
 		4BE1F77E251B8C460080B3F8 /* ios_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1F77D251B8C460080B3F8 /* ios_calculatorTests.swift */; };
 		4BE1F789251B8C460080B3F8 /* ios_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1F788251B8C460080B3F8 /* ios_calculatorUITests.swift */; };
+		4BE1F7B8251B98C70080B3F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1F7B6251B98C70080B3F8 /* HomeViewController.swift */; };
+		4BE1F7B9251B98C70080B3F8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE1F7B7251B98C70080B3F8 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		4BE1F784251B8C460080B3F8 /* ios-calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE1F788251B8C460080B3F8 /* ios_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_calculatorUITests.swift; sourceTree = "<group>"; };
 		4BE1F78A251B8C460080B3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE1F7B6251B98C70080B3F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4BE1F7B7251B98C70080B3F8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				4BE1F766251B8C450080B3F8 /* AppDelegate.swift */,
+				4BE1F7AD251B8F9B0080B3F8 /* Controller */,
+				4BE1F7AB251B8F900080B3F8 /* Model */,
+				4BE1F7AC251B8F970080B3F8 /* View */,
+				4BE1F7AE251B8FD10080B3F8 /* Util */,
+				4BE1F7AF251B90010080B3F8 /* Supporting Files */,
 				4BE1F76F251B8C450080B3F8 /* Assets.xcassets */,
-				4BE1F771251B8C450080B3F8 /* LaunchScreen.storyboard */,
 				4BE1F774251B8C450080B3F8 /* Info.plist */,
 			);
 			path = "ios-calculator";
@@ -117,6 +125,68 @@
 				4BE1F78A251B8C460080B3F8 /* Info.plist */,
 			);
 			path = "ios-calculatorUITests";
+			sourceTree = "<group>";
+		};
+		4BE1F7AB251B8F900080B3F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BE1F7AC251B8F970080B3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BE1F7B4251B93AA0080B3F8 /* Home */,
+				4BE1F7B0251B90250080B3F8 /* Launch */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BE1F7AD251B8F9B0080B3F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BE1F7B5251B93B30080B3F8 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BE1F7AE251B8FD10080B3F8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4BE1F7AF251B90010080B3F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BE1F7B0251B90250080B3F8 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4BE1F771251B8C450080B3F8 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		4BE1F7B4251B93AA0080B3F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BE1F7B7251B98C70080B3F8 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4BE1F7B5251B93B30080B3F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BE1F7B6251B98C70080B3F8 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +294,7 @@
 			files = (
 				4BE1F773251B8C450080B3F8 /* LaunchScreen.storyboard in Resources */,
 				4BE1F770251B8C450080B3F8 /* Assets.xcassets in Resources */,
+				4BE1F7B9251B98C70080B3F8 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE1F767251B8C450080B3F8 /* AppDelegate.swift in Sources */,
+				4BE1F7B8251B98C70080B3F8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

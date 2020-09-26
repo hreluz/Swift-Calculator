@@ -375,6 +375,7 @@
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="h9g-oJ-skR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" priority="900" constant="18" id="Ux8-WX-po8"/>
+                <constraint firstItem="h9g-oJ-skR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YPb-0T-8Rj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ca8-et-Ypw" secondAttribute="trailing" constant="20" id="caQ-ui-ImL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h9g-oJ-skR" secondAttribute="trailing" priority="900" constant="18" id="csB-vR-eIH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h9g-oJ-skR" secondAttribute="bottom" constant="18" id="iQu-HM-gMa"/>

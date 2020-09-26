@@ -54,37 +54,69 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //UI
+        number0.round()
+        number1.round()
+        number2.round()
+        number3.round()
+        number4.round()
+        number5.round()
+        number6.round()
+        number7.round()
+        number8.round()
+        number9.round()
+        numberDecimal.round()
+        
+        operatorAC.round()
+        operatorPlusMinus.round()
+        operatorPercent.round()
+        operatorResult.round()
+        operatorAddition.round()
+        operatorSubstraction.round()
+        operatorMultiply.round()
+        operatorDivision.round()
     }
     
     // MARK : Button Actions
-    @IBAction func operatorACAction(_ sender: Any) {
+    @IBAction func operatorACAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorPlusMinusAction(_ sender: Any) {
+    @IBAction func operatorPlusMinusAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorPercentAction(_ sender: Any) {
+    @IBAction func operatorPercentAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorResultAction(_ sender: Any) {
+    @IBAction func operatorResultAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorAdditionAction(_ sender: Any) {
+    @IBAction func operatorAdditionAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorSubstractionAction(_ sender: Any) {
+    @IBAction func operatorSubstractionAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorMultiplyAction(_ sender: Any) {
+    @IBAction func operatorMultiplyAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorDivisionAction(_ sender: Any) {
+    @IBAction func operatorDivisionAction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func numberDecimalAction(_ sender: Any) {
+    @IBAction func numberDecimalAction(_ sender: UIButton) {
+        sender.shine()
     }
     
     @IBAction func numberAction(_ sender: UIButton) {
+        sender.shine()
         print(sender.tag)
     }
 }

@@ -98,7 +98,6 @@
                                     </state>
                                     <connections>
                                         <action selector="operatorDivisionAction:" destination="-1" eventType="touchUpInside" id="71j-C6-0zV"/>
-                                        <action selector="operatorSubstractionAction:" destination="-1" eventType="touchUpInside" id="8Dk-0R-y2Q"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -362,7 +361,7 @@
                         </stackView>
                     </subviews>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-et-Ypw">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-et-Ypw">
                     <rect key="frame" x="20" y="64" width="335" height="119.5"/>
                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="100"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

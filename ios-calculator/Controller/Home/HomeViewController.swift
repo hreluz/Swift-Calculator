@@ -181,6 +181,8 @@ final class HomeViewController: UIViewController {
         
         operating = true
         operation = .addition
+        sender.selectOperation(isSelected: true)
+        
         sender.shine()
     }
     
@@ -191,6 +193,7 @@ final class HomeViewController: UIViewController {
         
         operating = true
         operation = .substraction
+        sender.selectOperation(isSelected: true)
         sender.shine()
     }
     
@@ -201,6 +204,7 @@ final class HomeViewController: UIViewController {
         
         operating = true
         operation = .multiplication
+        sender.selectOperation(isSelected: true)
         sender.shine()
     }
     
@@ -211,6 +215,7 @@ final class HomeViewController: UIViewController {
         
         operating = true
         operation = .division
+        sender.selectOperation(isSelected: true)
         sender.shine()
     }
     
@@ -223,12 +228,11 @@ final class HomeViewController: UIViewController {
         resultLabel.text = resultLabel.text! + kDecimalSeparator
         decimal = true
         
-        
+        selectVisualOperation()
         sender.shine()
     }
     
     @IBAction func numberAction(_ sender: UIButton) {
-        sender.shine()
         
         operatorAC.setTitle("C", for: .normal)
         
@@ -257,7 +261,8 @@ final class HomeViewController: UIViewController {
         temp = Double(currentTemp + String(number))!
         resultLabel.text = printFormatter.string(from: NSNumber(value: temp ))
         
-        print(sender.tag)
+        selectVisualOperation()
+        sender.shine()
     }
     
     // Clean the values
@@ -303,6 +308,50 @@ final class HomeViewController: UIViewController {
         
         operation = .none
         
+        selectVisualOperation()
+        
         print("TOTAL: \(total)")
+    }
+    
+    private func selectVisualOperation() {
+        if !operating {
+            operatorAddition.selectOperation(isSelected: false)
+            operatorSubstraction.selectOperation(isSelected: false)
+            operatorMultiply.selectOperation(isSelected: false)
+            operatorDivision.selectOperation(isSelected: false)
+        } else {
+            switch operation {
+            case .none, .percent:
+                operatorAddition.selectOperation(isSelected: false)
+                operatorSubstraction.selectOperation(isSelected: false)
+                operatorMultiply.selectOperation(isSelected: false)
+                operatorDivision.selectOperation(isSelected: false)
+                break
+            case .addition:
+                operatorAddition.selectOperation(isSelected: true)
+                operatorSubstraction.selectOperation(isSelected: false)
+                operatorMultiply.selectOperation(isSelected: false)
+                operatorDivision.selectOperation(isSelected: false)
+                break
+            case .substraction:
+                operatorAddition.selectOperation(isSelected: false)
+                operatorSubstraction.selectOperation(isSelected: true)
+                operatorMultiply.selectOperation(isSelected: false)
+                operatorDivision.selectOperation(isSelected: false)
+                break
+            case .multiplication:
+                operatorAddition.selectOperation(isSelected: false)
+                operatorSubstraction.selectOperation(isSelected: false)
+                operatorMultiply.selectOperation(isSelected: true)
+                operatorDivision.selectOperation(isSelected: false)
+                break
+            case .division:
+                operatorAddition.selectOperation(isSelected: false)
+                operatorSubstraction.selectOperation(isSelected: false)
+                operatorMultiply.selectOperation(isSelected: false)
+                operatorDivision.selectOperation(isSelected: true)
+                break
+            }
+        }
     }
 }
